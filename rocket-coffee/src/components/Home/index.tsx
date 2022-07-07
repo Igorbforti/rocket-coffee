@@ -1,5 +1,7 @@
 import rocketCoffee from "../../assets/rocket-coffee.png"
-import arrow from "../../assets/arrow.svg"
+
+const arrowLeft = "<";
+const arrowRight = ">";
 
 function Home() {
     return (window.innerWidth) > 768 ? (
@@ -8,11 +10,11 @@ function Home() {
                 <p className="font-bold text-[80px] w-full h-[109px]">Great Coffee</p>
             </div>
             <div className="w-full h-[109px] flex justify-center">
-                <h1 className="flex justify-center font-bold text-[80px] w-[548px] text-black 
+                <h1 className="flex justify-center font-bold text-[80px] w-[600px] text-black 
                             before:bg-arrow before:bg-no-repeat before:w-[70px] before:h-[45px] before:absolute before:bg-[length:85px_45px] before:rotate-180 before:top-10 before:left-0
                             after:bg-arrow after:bg-no-repeat after:w-[70px] after:h-[45px] after:absolute after:bg-[length:85px_45px] after:top-10 after:right-0"
                 >
-                            Great Code/
+                            {arrowLeft}Great Code/{arrowRight}
                 </h1>
             </div>
             <div>
@@ -31,13 +33,9 @@ function Home() {
                 PEGAR MEU CAFÉ
             </a>
             <p className="text-[50px] font-bold h-[54px] mt-[98px] mb-[6px]">Great Coffee</p>
-            <div className="flex">
-                <img src={arrow} alt="" className="rotate-180 mr-1 w-5" />
             <h1 className="flex justify-center items-center font-bold text-[50px] w-fit h-[69px] text-black">
-                Great Code/
+                {arrowLeft}Great Code/{arrowRight}
             </h1>
-                <img src={arrow} alt="" className="ml-1 w-5" />
-            </div>
                 <img src={rocketCoffee} alt="Coffee" className="max-w-full"/>
         </div>
     )

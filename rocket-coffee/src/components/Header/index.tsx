@@ -36,7 +36,7 @@ const Header = () => {
                 </Link>
             </div>
                 <nav className={sidebar ? "" : "fixed left-[-100%]"}>
-                    <ul className="h-screen w-screen">
+                    <ul className="h-screen w-screen border-b border-gray-500">
                         {MenuData.map((item, index) => {
                             return (
                                 <li key={index} className="py-[18px] pl-[30px] border-b border-gray-500 text-[#a8a8b3] text-lg hover:border-l-4 hover:border-l-brand-500 hover:text-white hover:font-bold">
