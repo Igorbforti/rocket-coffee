@@ -5,14 +5,16 @@ module.exports = {
       colors: {
         brand: {
           500: "#8257E5"
+        },
+        gray: {
+          500: "#29292E"
         }
       }
     },
-    dropShadow: {
-      '3xl': "0 0 1px rgba(130, 87, 229, 1)"
-    },
     backgroundImage: {
-      'arrow': "url('./src/assets/arrow.svg')"
+      'arrow': "url('./src/assets/arrow.svg')",
+      'arrowMobile': "url('./src/assets/arrowMobile.svg')",
+      'blurMobile': "url('./src/assets/blur-mobile.png')"
     }
   },
   plugins: [],
