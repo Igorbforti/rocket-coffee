@@ -37,6 +37,12 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        background-image: url("./assets/blur-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
     body::before {
         display: none;
     }
